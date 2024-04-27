@@ -1,0 +1,27 @@
+---
+import AsteriskIcon from '../icons/asterisk-icon.astro'
+import Map from './Map.astro'
+import trabajos from '../const/trabajos.json'
+---
+
+<section
+id="trabajos"
+class='grid grid-cols-2 px-20 mt-20'>
+  <article class='font-primary flex flex-col justify-around pl-20'>
+    <h2 class='text-3xl font-medium'>
+      Trabajos en <strong>AMBA</strong> y
+      <strong>CABA</strong>
+    </h2>
+    <ul class='flex flex-col gap-y-5 px-5'>
+      {
+        trabajos.map(({ title }) => (
+          <li class='flex items-center gap-x-5 text-xl font-medium text-neutral-800'>
+            <AsteriskIcon />
+            <span>{title}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
+  <Map />
+</section>

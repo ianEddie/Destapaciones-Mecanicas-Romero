@@ -1,0 +1,32 @@
+<form
+  class='flex flex-col justify-around gap-y-5 font-primary text-neutral-100'
+>
+  <div>
+    <label for=''>Nobre</label>
+    <input type='text' />
+  </div>
+  <div>
+    <label for=''>E-mail</label>
+    <input type='text' />
+  </div>
+  <div>
+    <label for=''>Consulta</label>
+    <textarea name='' id=''></textarea>
+  </div>
+  <button
+    class='self-start bg-stone-200 px-3 rounded-3xl text-neutral-950 font-medium hover:scale-110 hover:bg-neutral-100 hover:text-black hover:shadow-lg hover:shadow-neutral-800 transition-all duration-300'
+    >Enviar</button
+  >
+</form>
+<style>
+  div {
+    @apply flex flex-col items-start gap-y-3;
+  }
+  label {
+    @apply font-medium;
+  }
+  input,
+  textarea {
+    @apply bg-transparent border-b border-b-neutral-400 w-2/3;
+  }
+</style>
