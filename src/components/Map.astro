@@ -1,15 +1,18 @@
+
 <article id='map' class='min-h-[320px] rounded-lg z-0'></article>
+
 <script>
   // -34.578459532847724, -58.42843895289317
-  var map = L.map('map').setView([-34.578459532847724, -58.42843895289317], 11)
+  const map = L.map('map').setView(
+    [-34.578459532847724, -58.42843895289317],
+    11
+  )
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    maxZoom: 19
   }).addTo(map)
 
-  var circle = L.circle([-34.578459532847724, -58.42843895289317], {
+  const circle = L.circle([-34.578459532847724, -58.42843895289317], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.2,

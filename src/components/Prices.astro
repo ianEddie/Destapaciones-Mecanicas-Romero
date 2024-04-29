@@ -1,0 +1,25 @@
+---
+import DollarIcon from '../icons/dollar-icon.astro'
+import PriceIcon from '../icons/price-icon.astro'
+import precios from '../const/precios.json'
+---
+
+<section class='px-20 mt-20 font-primary flex flex-col gap-y-10'>
+  <h1 class='text-3xl font-medium'>Los mejores precios del mercado</h1>
+  <ul class='w-full flex flex-col gap-y-5'>
+    {
+      precios.map(({ name, value }) => (
+        <li class='flex justify-between items-center px-10 text-xl border-b border-b-neutral-500 pb-5'>
+          <div class='flex gap-x-3 items-center '>
+            <PriceIcon />
+            <span>{name}</span>
+          </div>
+          <div class='flex gap-x-1 '>
+            <span>$</span>
+            <span>{value}</span>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</section>
