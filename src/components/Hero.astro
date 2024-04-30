@@ -2,8 +2,11 @@
 import { FOOTER_DATA } from '../const/footer-contact.astro'
 ---
 
-<section id='home' class='h-screen w-full grid grid-cols-2 px-20 font-primary'>
-  <article class='flex flex-col items-start justify-center gap-y-20'>
+<section
+  id='home'
+  class='sm:min-h-screen min-h-[70vh] w-full grid sm:grid-cols-2 grid-cols-1 sm:px-20 px-10 font-primary'
+>
+  <article class='flex flex-col items-start sm:justify-center justify-around sm:gap-y-20 gap-y-10 sm:mt-0 mt-20'>
     <h1 class='text-[2.7em] flex flex-col gap-1'>
       <span class='font-medium'>Destapaciones Mecanicas</span>
       <span class='font-medium'>Romero</span>
@@ -14,7 +17,7 @@ import { FOOTER_DATA } from '../const/footer-contact.astro'
       consequuntur expedita! Quaerat beatae nulla deserunt autem. Voluptas,
       minima.
     </p>
-    <nav class='flex justify-around w-full'>
+    <nav class='flex sm:flex-row flex-col gap-y-5 justify-around w-full'>
       {
         FOOTER_DATA.map((item) => (
           <button class='flex items-center gap-x-3 w-fit hover:scale-105 hover:-translate-y-1 transition-all duration-300'>
@@ -27,11 +30,11 @@ import { FOOTER_DATA } from '../const/footer-contact.astro'
       }
     </nav>
   </article>
-  <picture class='flex items-center justify-end'>
+  <picture class='sm:flex hidden items-center justify-end'>
     <img
       src='/images/hero-bg.jpg'
       alt='Imagen'
-      class='object-cover w-[80%] h-[75%] rounded-lg shadow-xl shadow-black/40 grayscale-[20%]'
+      class='object-cover w-[80%] h-[75%] rounded-lg shadow-xl shadow-stone-400 grayscale-[20%]'
     />
   </picture>
 </section>

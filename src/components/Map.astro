@@ -1,21 +1,6 @@
+---
+import style from '../animations/reveal.module.css'
+---
 
-<article id='map' class='min-h-[320px] rounded-lg z-0'></article>
-
-<script>
-  // -34.578459532847724, -58.42843895289317
-  const map = L.map('map').setView(
-    [-34.578459532847724, -58.42843895289317],
-    11
-  )
-
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19
-  }).addTo(map)
-
-  const circle = L.circle([-34.578459532847724, -58.42843895289317], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.2,
-    radius: 4000
-  }).addTo(map)
-</script>
+<article id='map' class={`${style.reveal} min-h-[320px] rounded-lg z-0 shadow-lg shadow-stone-400 sm:mt-0 mt-10`}>
+</article>
