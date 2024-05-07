@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Clash Display'],
-        secondary: ['Panchang']
+        primary: ['ClashDisplay-Variable'],
+        secondary: ['Panchang-Variable']
       }
     }
   },

@@ -1,12 +1,16 @@
 ---
 import { FOOTER_DATA } from '../const/footer-contact.astro'
+import { Image } from 'astro:assets'
+import heroImage from '@/assets/hero-bg.avif'
 ---
 
 <section
   id='home'
   class='sm:min-h-screen min-h-[70vh] w-full grid sm:grid-cols-2 grid-cols-1 sm:px-20 px-10 font-primary'
 >
-  <article class='flex flex-col items-start sm:justify-center justify-around sm:gap-y-20 gap-y-10 sm:mt-0 mt-20'>
+  <article
+    class='flex flex-col items-start sm:justify-center justify-around sm:gap-y-20 gap-y-10 sm:mt-0 mt-20'
+  >
     <h1 class='text-[2.7em] flex flex-col gap-1'>
       <span class='font-medium'>Destapaciones Mecanicas</span>
       <span class='font-medium'>Romero</span>
@@ -31,8 +35,9 @@ import { FOOTER_DATA } from '../const/footer-contact.astro'
     </nav>
   </article>
   <picture class='sm:flex hidden items-center justify-end'>
-    <img
-      src='/images/hero-bg.avif'
+    <Image
+      loading='lazy'
+      src={heroImage}
       alt='Imagen'
       class='object-cover w-[80%] h-[75%] rounded-lg shadow-xl shadow-stone-400 grayscale-[20%]'
     />
