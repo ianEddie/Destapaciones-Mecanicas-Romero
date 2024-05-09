@@ -2,20 +2,20 @@
 import ClockIcon from '../icons/clock-icon.astro'
 import style from '../animations/reveal.module.css'
 import { Image } from 'astro:assets'
-import aboutImage from '@/assets/about.avif'
+import aboutImage from '@/assets/about.webp'
 import icon from '@/assets/icon-penn.svg'
 ---
 
 <section class='sm:px-20 px-10 mt-20'>
   <article
-    class={`${style.reveal} bg-stone-200 grid sm:grid-cols-2 rounded-xl`}
+    class={`${style.reveal} bg-stone-300/90 grid sm:grid-cols-2 rounded-xl`}
   >
     <picture class='sm:p-10 p-5 sm:order-1 order-2'>
       <Image
         loading='lazy'
         src={aboutImage}
         alt='Imagen'
-        class='rounded-lg grayscale-[30%]'
+        class='rounded-lg grayscale-[20%]'
       />
     </picture>
     <div

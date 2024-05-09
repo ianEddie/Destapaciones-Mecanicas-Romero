@@ -1,6 +1,6 @@
 ---
 import { FOOTER_DATA } from '../const/footer-contact.astro'
-import heroImage from '@/assets/hero-bg.avif'
+import heroImage from '@/assets/hero-bg.webp'
 ---
 
 <section
@@ -20,7 +20,7 @@ import heroImage from '@/assets/hero-bg.avif'
       consequuntur expedita! Quaerat beatae nulla deserunt autem. Voluptas,
       minima.
     </p>
-    <nav class='flex sm:flex-row flex-col gap-y-5 justify-around w-full'>
+    <nav class='flex sm:flex-row flex-col justify-between gap-y-5 w-[90%]'>
       {
         FOOTER_DATA.map((item) => (
           <button class='flex items-center gap-x-3 w-fit hover:scale-105 hover:-translate-y-1 transition-all duration-300'>
@@ -33,7 +33,7 @@ import heroImage from '@/assets/hero-bg.avif'
       }
     </nav>
   </article>
-  <picture class='sm:flex hidden items-center justify-end px-7'>
+  <picture class='sm:flex hidden justify-end items-center px-7'>
     <img
       src={heroImage.src}
       alt='Imagen de un plomero'
