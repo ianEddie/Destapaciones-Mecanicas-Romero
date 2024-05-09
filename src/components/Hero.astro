@@ -20,7 +20,10 @@ import heroImage from '@/assets/hero-bg.webp'
       consequuntur expedita! Quaerat beatae nulla deserunt autem. Voluptas,
       minima.
     </p>
-    <nav class='flex sm:flex-row flex-col justify-between gap-y-5 w-[90%]'>
+    <nav
+      class='flex sm:flex-row flex-col justify-between gap-y-5 w-[90%]'
+      aria-label='hero navigation'
+    >
       {
         FOOTER_DATA.map((item) => (
           <button class='flex items-center gap-x-3 w-fit hover:scale-105 hover:-translate-y-1 transition-all duration-300'>
@@ -33,13 +36,13 @@ import heroImage from '@/assets/hero-bg.webp'
       }
     </nav>
   </article>
-  <picture class='sm:flex hidden justify-end items-center px-7'>
+  <picture class='sm:flex hidden justify-end items-center'>
     <img
       src={heroImage.src}
       alt='Imagen de un plomero'
       width={heroImage.width}
       height={heroImage.height}
-      class='object-cover rounded-lg shadow-xl shadow-stone-400 grayscale-[20%]'
+      class='object-cover rounded-lg shadow-xl shadow-stone-400 grayscale-[20%] w-[95%]'
     />
   </picture>
 </section>
