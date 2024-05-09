@@ -1,6 +1,5 @@
 ---
 import { FOOTER_DATA } from '../const/footer-contact.astro'
-import { Image } from 'astro:assets'
 import heroImage from '@/assets/hero-bg.avif'
 ---
 
@@ -34,12 +33,12 @@ import heroImage from '@/assets/hero-bg.avif'
       }
     </nav>
   </article>
-  <picture class='sm:flex hidden items-center justify-end'>
-    <Image
-      src={heroImage}
-      alt='Imagen'
-      width='500'
-      height='300'
+  <picture class='sm:flex hidden items-center justify-end px-7'>
+    <img
+      src={heroImage.src}
+      alt='Imagen de un plomero'
+      width={heroImage.width}
+      height={heroImage.height}
       class='object-cover rounded-lg shadow-xl shadow-stone-400 grayscale-[20%]'
     />
   </picture>
