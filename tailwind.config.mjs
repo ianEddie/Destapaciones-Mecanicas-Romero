@@ -6,6 +6,11 @@ export default {
       fontFamily: {
         primary: ['ClashDisplay-Variable'],
         secondary: ['Panchang-Variable']
+      },
+      colors: {
+        base: 'var(--base-color)',
+        primary: 'var(--primary-color)',
+        neutro: 'var(--neutro-color)'
       }
     }
   },

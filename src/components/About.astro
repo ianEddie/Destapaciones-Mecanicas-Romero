@@ -2,51 +2,24 @@
 import ClockIcon from '@/icons/clock-icon.astro'
 import style from '@/animations/reveal.module.css'
 import { Image } from 'astro:assets'
-import aboutImage from '@/assets/about.webp'
+import aboutImage from '@/assets/destapacion-de-cañeria-2.webp'
 import icon from '@/assets/icon-penn.svg'
+import AboutInfo from './AboutInfo.astro'
 ---
 
-<section class='sm:px-20 px-10 mt-20'>
+<section class='sm:px-20 px-10 mt-20 flex'>
   <article
-    class={`${style.reveal} bg-stone-300/90 grid sm:grid-cols-2 rounded-xl text-neutral-950`}
+    class={`${style.reveal} bg-stone-300 p-7 grid sm:grid-cols-2 rounded-xl`}
   >
-    <picture class='sm:p-10 p-5 sm:order-1 order-2'>
+    <picture class='sm:order-1 order-2'>
       <Image
         loading='lazy'
         src={aboutImage}
-        alt='Imagen de un plomero'
-        class='rounded-lg grayscale-[20%]'
+        alt='Destapacion de cañeria'
+        title='Destapaciones de cañerias'
+        class='rounded-lg grayscale-[20%] h-[350px] w-[550px] object-cover'
       />
     </picture>
-    <div
-      class='font-primary flex flex-col justify-around sm:p-10 p-5 gap-y-5 sm:order-2 order-1'
-    >
-      <div class='flex gap-x-5 items-center w-full'>
-        <Image
-          loading='lazy'
-          src={icon}
-          alt='Icono'
-          class='sm:size-14 size-12'
-        />
-        <h1 class='sm:text-3xl text-2xl font-medium'>
-          Servicio rapido y eficiente
-        </h1>
-      </div>
-      <p
-        class='max-w-[95%] text-pretty sm:text-base text-sm font-medium text-neutral-700'
-      >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore
-        mollitia laboriosam accusamus dolorem cum illum corporis quisquam
-        nesciunt fugit numquam eum vel tempora doloribus quia quam, fugiat vero
-        deserunt.
-      </p>
-      <div class='flex items-center gap-x-3'>
-        <ClockIcon />
-        <h2 class='sm:text-2xl text-xl font-semibold flex gap-x-3'>
-          <span>Urgencias</span>
-          <span>24 horas</span>
-        </h2>
-      </div>
-    </div>
+    <AboutInfo />
   </article>
 </section>
