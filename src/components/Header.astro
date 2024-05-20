@@ -1,9 +1,18 @@
+---
+import HourIcon from '@/icons/24hs-icon.astro'
+---
+
 <header
-  class='font-secondary z-10 fixed w-full sm:px-20 px-10 py-3 flex justify-between items-center'
+  class='font-secondary z-10 fixed w-full sm:px-20 px-3 py-3 flex justify-between items-center'
 >
-  <a href='#home' class='font-semibold tracking-widest'>DMR</a>
+  <div class='flex items-start sm:gap-x-3 gap-x-1'>
+    <a href='#home' class='font-semibold tracking-widest sm:text-[16px] text-sm'
+      >DMR</a
+    >
+    <HourIcon />
+  </div>
   <nav
-    class='flex items-center sm:gap-x-7 gap-x-5 font-semibold opacity-90 sm:text-[12px] text-[11px] uppercase'
+    class='flex items-center sm:gap-x-7 gap-x-3 font-semibold opacity-90 sm:text-[12px] text-[9px] uppercase'
   >
     <a href='#trabajos'>servicios</a>
     <a href='#contacto'>Contacto</a>
