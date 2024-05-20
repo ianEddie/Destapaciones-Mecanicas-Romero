@@ -5,7 +5,8 @@ export default {
     extend: {
       fontFamily: {
         primary: ['ClashDisplay-Variable'],
-        secondary: ['Panchang-Variable']
+        secondary: ['Panchang-Variable'],
+        text: ['Questrial']
       },
       colors: {
         base: 'var(--base-color)',

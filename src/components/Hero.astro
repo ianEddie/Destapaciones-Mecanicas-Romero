@@ -15,11 +15,14 @@ import heroImage from '@/assets/destapacion-de-cañeria.webp'
       <h1 class='text-[2.7em] flex flex-col gap-1 font-medium'>
         Destapaciones Mecánicas
       </h1>
-      <span class='text-[2.1em] uppercase tracking-widest'>Romero</span>
+      <span
+        class='text-[1.5em] uppercase tracking-widest text-stone-500 font-secondary'
+        >Romero</span
+      >
     </div>
     <!-- Text -->
     <p
-      class='text-pretty sm:text-[18px] text-sm sm:max-w-[90%] w-full sm:px-0 px-7 font-medium text-neutral-900/90'
+      class='font-text text-pretty sm:text-[18px] text-sm sm:max-w-[90%] w-full sm:px-0 px-7 text-black'
     >
       Somos una empresa familiar con más de <strong
         >15 años de experiencia</strong
@@ -35,9 +38,9 @@ import heroImage from '@/assets/destapacion-de-cañeria.webp'
     >
       {
         FOOTER_DATA.map((item) => (
-          <button class='flex items-center gap-x-3 w-fit hover:scale-105 hover:-translate-y-1 transition-all duration-300'>
-            <item.icon class='sm:size-6 size-5 text-neutral-900' />
-            <span class='text-neutral-900 sm:text-[16px] text-sm font-medium'>
+          <button class='flex items-center gap-x-2 w-fit hover:scale-105 hover:-translate-y-1 transition-all duration-300'>
+            <item.icon class='sm:size-[23px] size-5 text-neutral-900' />
+            <span class='text-neutral-900/90 sm:text-[16px] text-sm font-semibold'>
               {item.value}
             </span>
           </button>
@@ -52,7 +55,7 @@ import heroImage from '@/assets/destapacion-de-cañeria.webp'
       title='Destapaciones de cañerias'
       width={heroImage.width}
       height={heroImage.height}
-      class='object-cover rounded-lg shadow-xl shadow-stone-400 grayscale-[20%] h-[400px] w-[550px]'
+      class='rounded-lg shadow-xl shadow-stone-400 grayscale-[15%]'
     />
   </picture>
 </section>
