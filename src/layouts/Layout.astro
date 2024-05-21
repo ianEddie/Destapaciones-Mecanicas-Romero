@@ -1,5 +1,4 @@
 ---
-import '@fontsource/questrial'
 import Footer from '@/components/Footer.astro'
 import Header from '../components/Header.astro'
 
@@ -14,7 +13,7 @@ const { title } = Astro.props
 <html lang='en' class='scroll-smooth'>
   <head>
     <meta charset='UTF-8' />
-    <meta name='title' content='Destapaciones de cañeria' />
+    <meta name='title' content='Destapaciones de cañeria en CABA y AMBA.' />
     <meta
       name='description'
       content='Urgencias en AMBA y CABA las 24 hs. Somos la empresa lider en Destapaciones con maquina de cañerias.'
@@ -27,6 +26,27 @@ const { title } = Astro.props
     />
     <title>{title}</title>
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link
+      rel='preload'
+      href='/fonts/ClashDisplay-Variable.woff2'
+      as='font'
+      type='font/woff2'
+      crossorigin
+    />
+    <link
+      rel='preload'
+      href='/fonts/Panchang-Variable.woff2'
+      as='font'
+      type='font/woff2'
+      crossorigin
+    />
+    <link
+      rel='preload'
+      href='/fonts/Poppins-Variable.woff2'
+      as='font'
+      type='font/woff2'
+      crossorigin
+    />
   </head>
   <body>
     <Header />
@@ -59,8 +79,9 @@ const { title } = Astro.props
     font-style: normal;
   }
   @font-face {
-    font-family: 'Questrial', sans-serif;
-    font-weight: 200 800;
+    font-family: 'Poppins-Variable';
+    src: url('../fonts/Poppins-Variable.woff2') format('woff2');
+    font-weight: 100 900;
     font-display: swap;
     font-style: normal;
   }

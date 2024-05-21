@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         primary: ['ClashDisplay-Variable'],
         secondary: ['Panchang-Variable'],
-        text: ['Questrial']
+        text: ['Poppins-Variable']
       },
       colors: {
         base: 'var(--base-color)',
