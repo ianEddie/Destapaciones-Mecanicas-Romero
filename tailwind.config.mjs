@@ -19,6 +19,9 @@ export default {
         title: ['2.5rem'],
         'desktop-subtitle': ['1.9rem'],
         'mobile-subtitle': ['1.5rem']
+      },
+      boxShadow: {
+        custom: '4px 8px 9px 0 hsla(0, 0%, 0%, 0.4)'
       }
     }
   },
