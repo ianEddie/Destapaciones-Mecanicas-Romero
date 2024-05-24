@@ -13,19 +13,62 @@ const { title } = Astro.props
 <html lang='en' class='scroll-smooth'>
   <head>
     <meta charset='UTF-8' />
+    <!-- Title -->
     <meta name='title' content='Destapaciones de cañeria en CABA y AMBA.' />
+    <!-- Description -->
     <meta
       name='description'
       content='Urgencias en AMBA y CABA las 24 hs. Somos la empresa lider en todo tipo de destapaciones.'
     />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta name='generator' content={Astro.generator} />
+    <!-- Google Search Console -->
     <meta
       name='google-site-verification'
       content='Q59Uo7xM1hAeXAuop8ZSa4o-IGGBwP73x-oPDe9J3mw'
     />
+    <!-- Social Media -->
+    <meta
+      property='og:title'
+      content='Destapaciones de cañeria en CABA y AMBA'
+    />
+    <meta
+      property='og:description'
+      content='Urgencias en AMBA y CABA las 24 hs. Somos la empresa líder en todo tipo de destapaciones.'
+    />
+    <meta
+      property='og:url'
+      content='https://destapaciones-mecanicas.netlify.app/'
+    />
+    <meta property='og:type' content='website' />
+    <meta
+      property='og:image'
+      content='https://destapaciones-mecanicas.netlify.app/_astro/destapacion-de-ca%C3%B1eria.DUQIWEgw.webp'
+    />
+    <!-- Schema.org Markup   -->
+    <script is:inline type='application/ld+json'>
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Destapaciones Mecanicas Romero",
+        "url": "https://destapaciones-mecanicas.netlify.app/",
+        "logo": "URL de tu logo",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-800-555-5555",
+          "contactType": "Customer Service",
+          "areaServed": "AR",
+          "availableLanguage": "es"
+        }
+      }
+    </script>
+    <!-- Title -->
     <title>{title}</title>
+    <!-- Canonical URL -->
+    <link rel='canonical' href='https://destapaciones-mecanicas.netlify.app/' />
+    <!-- Favicon -->
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <!-- Fonts preload -->
     <link
       rel='preload'
       href='/fonts/ClashDisplay-Variable.woff2'
